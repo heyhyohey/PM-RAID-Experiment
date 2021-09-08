@@ -1,0 +1,60 @@
+pnode0: (g=0): rw=randwrite, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libpmem, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 2 processes
+pnode0: Prepopulating IO file (/mnt/pnode0.0.0)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.1)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.2)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.3)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.4)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.5)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.6)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.7)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.8)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.9)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.10)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.11)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.12)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.13)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.14)
+pnode0: Prepopulating IO file (/mnt/pnode0.0.15)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.0)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.1)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.2)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.3)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.4)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.5)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.6)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.7)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.8)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.9)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.10)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.11)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.12)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.13)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.14)
+pnode0: Prepopulating IO file (/mnt/pnode0.1.15)
+
+pnode0: (groupid=0, jobs=2): err= 0: pid=8952: Thu Sep  2 12:07:23 2021
+  write: IOPS=558k, BW=2181MiB/s (2287MB/s)(256GiB/120001msec); 0 zone resets
+    clat (nsec): min=1101, max=111819, avg=2659.48, stdev=803.13
+     lat (nsec): min=1136, max=111853, avg=2695.38, stdev=804.83
+    clat percentiles (nsec):
+     |  1.00th=[ 1256],  5.00th=[ 2024], 10.00th=[ 2160], 20.00th=[ 2288],
+     | 30.00th=[ 2416], 40.00th=[ 2480], 50.00th=[ 2576], 60.00th=[ 2672],
+     | 70.00th=[ 2768], 80.00th=[ 2896], 90.00th=[ 3056], 95.00th=[ 3344],
+     | 99.00th=[ 5664], 99.50th=[ 6176], 99.90th=[14656], 99.95th=[17536],
+     | 99.99th=[18816]
+   bw (  MiB/s): min= 1952, max= 2228, per=100.00%, avg=2182.09, stdev=34.62, samples=479
+   iops        : min=499893, max=570452, avg=558614.38, stdev=8862.70, samples=479
+  lat (usec)   : 2=4.60%, 4=92.41%, 10=2.85%, 20=0.14%, 50=0.01%
+  lat (usec)   : 100=0.01%, 250=0.01%
+  cpu          : usr=98.35%, sys=1.63%, ctx=23275, majf=0, minf=1554831
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,67011122,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=2181MiB/s (2287MB/s), 2181MiB/s-2181MiB/s (2287MB/s-2287MB/s), io=256GiB (274GB), run=120001-120001msec

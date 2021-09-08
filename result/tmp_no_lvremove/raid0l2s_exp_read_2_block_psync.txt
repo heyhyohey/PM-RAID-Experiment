@@ -1,0 +1,35 @@
+pnode0: (g=0): rw=read, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 2 processes
+pnode0: Laying out IO files (128 files / total 131072MiB)
+pnode0: Laying out IO files (128 files / total 131072MiB)
+
+pnode0: (groupid=0, jobs=2): err= 0: pid=11987: Mon Sep  6 15:14:15 2021
+  read: IOPS=671k, BW=2619MiB/s (2747MB/s)(307GiB/120001msec)
+    clat (nsec): min=2186, max=102724, avg=2743.50, stdev=618.13
+     lat (nsec): min=2217, max=102759, avg=2777.00, stdev=621.20
+    clat percentiles (nsec):
+     |  1.00th=[ 2320],  5.00th=[ 2448], 10.00th=[ 2512], 20.00th=[ 2576],
+     | 30.00th=[ 2608], 40.00th=[ 2672], 50.00th=[ 2704], 60.00th=[ 2736],
+     | 70.00th=[ 2800], 80.00th=[ 2864], 90.00th=[ 2928], 95.00th=[ 3024],
+     | 99.00th=[ 3248], 99.50th=[ 3376], 99.90th=[15040], 99.95th=[18048],
+     | 99.99th=[18560]
+   bw (  MiB/s): min= 2569, max= 2631, per=100.00%, avg=2622.35, stdev= 2.91, samples=478
+   iops        : min=657833, max=673662, avg=671322.15, stdev=744.37, samples=478
+  lat (usec)   : 4=99.75%, 10=0.07%, 20=0.18%, 50=0.01%, 100=0.01%
+  lat (usec)   : 250=0.01%
+  cpu          : usr=13.51%, sys=86.45%, ctx=21943, majf=0, minf=121
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=80469253,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=2619MiB/s (2747MB/s), 2619MiB/s-2619MiB/s (2747MB/s-2747MB/s), io=307GiB (330GB), run=120001-120001msec
+
+Disk stats (read/write):
+    dm-0: ios=101972629/21, merge=0/0, ticks=151824/0, in_queue=151824, util=100.00%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
