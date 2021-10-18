@@ -1,4 +1,0 @@
-pnode0: (g=0): rw=read, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
-fio-3.27-64-g15ce
-Starting 1 process
-pnode0: Laying out IO files (256 files / total 262144MiB)

@@ -2,11 +2,13 @@
 
 WORKLOAD_LIST=("read" "write" "randread" "randwrite")
 THREADS_LIST=("1" "2" "4" "8" "16")
-DEVICE_LIST=("/dev/pmem0" "/dev/pmem1" "/dev/pmem2" "/dev/pmem3" "/dev/pmem4" "/dev/pmem5" "/dev/pmem18" "/dev/pmem19" "/dev/pmem20" "/dev/pmem21" "/dev/pmem22" "/dev/pmem23")
+#DEVICE_LIST=("/dev/pmem0" "/dev/pmem1" "/dev/pmem2" "/dev/pmem3" "/dev/pmem4" "/dev/pmem5" "/dev/pmem12" "/dev/pmem13" "/dev/pmem14" "/dev/pmem15" "/dev/pmem16" "/dev/pmem17")
+DEVICE_LIST=("/dev/pmem0" "/dev/pmem3" "/dev/pmem18" "/dev/pmem21")
 IO_ENGINE="libpmem"
 LV_DEVICE="raid0s03"
 DEVICE_PATH="/dev/PmemVol/${LV_DEVICE}"
 MOUNT_PATH="/mnt"
+CPU_NODES="0"
 INTERLEAVE_COUNT=${#DEVICE_LIST[@]}
 
 for workload in ${WORKLOAD_LIST[@]}; do
@@ -20,7 +22,7 @@ for workload in ${WORKLOAD_LIST[@]}; do
 		mkfs.xfs -f -i size=2048 -d su=2m,sw=${INTERLEAVE_COUNT} -m reflink=0 ${DEVICE_PATH}
 		mount -t xfs -o noatime,nodiratime,nodiscard,dax ${DEVICE_PATH} ${MOUNT_PATH}
 		xfs_io -c "extsize 2m" /mnt
-		./fio.sh exp.fio ${workload} ${threads} ${IO_ENGINE} dax ${LV_DEVICE}
+		numactl --cpunodebind=${CPU_NODES} ./fio.sh exp.fio ${workload} ${threads} ${IO_ENGINE} dax ${LV_DEVICE}
 		umount /mnt
 		lvremove -y /dev/PmemVol/${LV_DEVICE}
 		vgremove -y PmemVol

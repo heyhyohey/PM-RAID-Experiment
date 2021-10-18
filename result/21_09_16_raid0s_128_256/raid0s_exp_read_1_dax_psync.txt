@@ -1,0 +1,37 @@
+pnode0: (g=0): rw=read, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+fio-3.27-64-g15ce
+Starting 1 process
+pnode0: Laying out IO files (256 files / total 262144MiB)
+
+pnode0: (groupid=0, jobs=1): err= 0: pid=2778: Wed Sep 15 17:06:34 2021
+  read: IOPS=469k, BW=1831MiB/s (1920MB/s)(215GiB/120001msec)
+    clat (nsec): min=1457, max=846056, avg=1901.70, stdev=473.51
+     lat (nsec): min=1483, max=846082, avg=1928.32, stdev=476.56
+    clat percentiles (nsec):
+     |  1.00th=[ 1592],  5.00th=[ 1672], 10.00th=[ 1736], 20.00th=[ 1784],
+     | 30.00th=[ 1816], 40.00th=[ 1848], 50.00th=[ 1880], 60.00th=[ 1912],
+     | 70.00th=[ 1944], 80.00th=[ 1976], 90.00th=[ 2096], 95.00th=[ 2224],
+     | 99.00th=[ 2384], 99.50th=[ 2480], 99.90th=[ 2832], 99.95th=[ 5472],
+     | 99.99th=[12736]
+   bw (  MiB/s): min= 1792, max= 1842, per=100.00%, avg=1833.63, stdev= 6.54, samples=239
+   iops        : min=458996, max=471724, avg=469408.30, stdev=1673.15, samples=239
+  lat (usec)   : 2=83.49%, 4=16.45%, 10=0.03%, 20=0.02%, 50=0.01%
+  lat (usec)   : 100=0.01%, 250=0.01%, 500=0.01%, 1000=0.01%
+  cpu          : usr=17.55%, sys=82.36%, ctx=12143, majf=0, minf=69
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=56251663,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=1831MiB/s (1920MB/s), 1831MiB/s-1831MiB/s (1920MB/s-1920MB/s), io=215GiB (230GB), run=120001-120001msec
+
+Disk stats (read/write):
+    dm-0: ios=0/16, merge=0/0, ticks=0/0, in_queue=0, util=0.01%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem5: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem3: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem4: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem2: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

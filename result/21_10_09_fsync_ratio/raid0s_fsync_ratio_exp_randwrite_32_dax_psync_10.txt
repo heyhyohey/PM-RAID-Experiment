@@ -1,0 +1,78 @@
+pnode0: (g=0): rw=randwrite, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 32 processes
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+
+pnode0: (groupid=0, jobs=32): err= 0: pid=17411: Thu Oct  7 12:47:25 2021
+  write: IOPS=125k, BW=489MiB/s (512MB/s)(57.3GiB/120002msec); 0 zone resets
+    clat (usec): min=2, max=23193, avg=25.50, stdev=91.09
+     lat (usec): min=2, max=23193, avg=25.58, stdev=91.09
+    clat percentiles (usec):
+     |  1.00th=[    4],  5.00th=[    5], 10.00th=[    7], 20.00th=[   18],
+     | 30.00th=[   20], 40.00th=[   21], 50.00th=[   23], 60.00th=[   25],
+     | 70.00th=[   28], 80.00th=[   31], 90.00th=[   35], 95.00th=[   39],
+     | 99.00th=[   61], 99.50th=[   77], 99.90th=[  562], 99.95th=[  848],
+     | 99.99th=[ 4490]
+   bw (  KiB/s): min=370594, max=698364, per=99.99%, avg=500315.08, stdev=2320.65, samples=7648
+   iops        : min=92645, max=174581, avg=125074.22, stdev=580.14, samples=7648
+  lat (usec)   : 4=2.91%, 10=11.10%, 20=19.35%, 50=64.79%, 100=1.50%
+  lat (usec)   : 250=0.08%, 500=0.15%, 750=0.06%, 1000=0.02%
+  lat (msec)   : 2=0.02%, 4=0.01%, 10=0.01%, 20=0.01%, 50=0.01%
+  fsync/fdatasync/sync_file_range:
+    sync (usec): min=4, max=25196, avg=2295.40, stdev=1743.57
+    sync percentiles (usec):
+     |  1.00th=[    6],  5.00th=[    7], 10.00th=[    8], 20.00th=[   11],
+     | 30.00th=[ 1713], 40.00th=[ 2114], 50.00th=[ 2409], 60.00th=[ 2704],
+     | 70.00th=[ 3064], 80.00th=[ 3490], 90.00th=[ 4113], 95.00th=[ 4752],
+     | 99.00th=[ 6390], 99.50th=[ 8586], 99.90th=[17171], 99.95th=[18482],
+     | 99.99th=[19792]
+  cpu          : usr=0.55%, sys=10.57%, ctx=4335602, majf=0, minf=1956
+  IO depths    : 1=110.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,15010552,0,1501049 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=489MiB/s (512MB/s), 489MiB/s-489MiB/s (512MB/s-512MB/s), io=57.3GiB (61.5GB), run=120002-120002msec
+
+Disk stats (read/write):
+    dm-0: ios=0/26555945, merge=0/0, ticks=0/202868, in_queue=202868, util=99.10%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem5: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem3: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem4: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem2: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

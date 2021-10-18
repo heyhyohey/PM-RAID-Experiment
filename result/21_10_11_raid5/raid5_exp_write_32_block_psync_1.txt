@@ -1,0 +1,89 @@
+pnode0: (g=0): rw=write, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 32 processes
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+
+pnode0: (groupid=0, jobs=32): err= 0: pid=15368: Mon Oct 11 02:50:24 2021
+  write: IOPS=9126, BW=35.6MiB/s (37.4MB/s)(4279MiB/120026msec); 0 zone resets
+    clat (usec): min=2, max=203, avg= 8.57, stdev= 5.12
+     lat (usec): min=2, max=203, avg= 8.77, stdev= 5.24
+    clat percentiles (nsec):
+     |  1.00th=[ 2800],  5.00th=[ 3152], 10.00th=[ 4512], 20.00th=[ 5600],
+     | 30.00th=[ 6048], 40.00th=[ 6432], 50.00th=[ 6880], 60.00th=[ 7392],
+     | 70.00th=[ 8512], 80.00th=[11840], 90.00th=[14016], 95.00th=[18560],
+     | 99.00th=[28544], 99.50th=[29568], 99.90th=[38656], 99.95th=[41728],
+     | 99.99th=[58624]
+   bw (  KiB/s): min=18279, max=57537, per=100.00%, avg=36532.85, stdev=247.47, samples=7680
+   iops        : min= 4568, max=14373, avg=9128.02, stdev=61.83, samples=7680
+  lat (usec)   : 4=8.48%, 10=65.93%, 20=21.23%, 50=4.34%, 100=0.02%
+  lat (usec)   : 250=0.01%
+  fsync/fdatasync/sync_file_range:
+    sync (usec): min=9, max=578682, avg=3495.81, stdev=6433.39
+    sync percentiles (usec):
+     |  1.00th=[   13],  5.00th=[   18], 10.00th=[   24], 20.00th=[   36],
+     | 30.00th=[   50], 40.00th=[   78], 50.00th=[ 1827], 60.00th=[ 2409],
+     | 70.00th=[ 3687], 80.00th=[ 4113], 90.00th=[ 7504], 95.00th=[19530],
+     | 99.00th=[29492], 99.50th=[31589], 99.90th=[39060], 99.95th=[43254],
+     | 99.99th=[50070]
+  cpu          : usr=0.12%, sys=1.63%, ctx=4181901, majf=2, minf=2020
+  IO depths    : 1=200.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,1095379,0,1095379 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=35.6MiB/s (37.4MB/s), 35.6MiB/s-35.6MiB/s (37.4MB/s-37.4MB/s), io=4279MiB (4487MB), run=120026-120026msec
+
+Disk stats (read/write):
+    dm-12: ios=0/3232918, merge=0/0, ticks=0/5524716, in_queue=5524716, util=100.00%, aggrios=2539442/469823, aggrmerge=0/0, aggrticks=4813/1772, aggrin_queue=6585, aggrutil=99.89%
+    dm-1: ios=5078909/939086, merge=0/0, ticks=9476/3704, in_queue=13180, util=99.88%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-10: ios=0/334, merge=0/0, ticks=0/0, in_queue=0, util=0.30%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem5: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-8: ios=0/334, merge=0/0, ticks=0/0, in_queue=0, util=0.30%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem4: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-6: ios=0/334, merge=0/0, ticks=0/0, in_queue=0, util=0.30%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem3: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-4: ios=0/334, merge=0/0, ticks=0/0, in_queue=0, util=0.30%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem2: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-2: ios=0/334, merge=0/0, ticks=0/4, in_queue=4, util=0.30%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  dm-11: ios=5079069/939170, merge=0/0, ticks=9704/3428, in_queue=13132, util=99.85%
+  dm-0: ios=0/334, merge=0/0, ticks=0/0, in_queue=0, util=0.30%
+  dm-9: ios=5078573/939536, merge=0/0, ticks=9724/3532, in_queue=13256, util=99.85%
+  dm-7: ios=5078768/939538, merge=0/0, ticks=9912/3764, in_queue=13676, util=99.89%
+  dm-5: ios=5079000/939375, merge=0/0, ticks=9672/3496, in_queue=13168, util=99.88%
+  dm-3: ios=5078991/939170, merge=0/0, ticks=9272/3340, in_queue=12612, util=99.89%

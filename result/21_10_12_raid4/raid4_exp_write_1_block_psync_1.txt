@@ -1,0 +1,57 @@
+pnode0: (g=0): rw=write, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+fio-3.27-64-g15ce
+Starting 1 process
+pnode0: Laying out IO files (256 files / total 262144MiB)
+
+pnode0: (groupid=0, jobs=1): err= 0: pid=28867: Mon Oct 11 16:17:53 2021
+  write: IOPS=986, BW=3946KiB/s (4041kB/s)(462MiB/120002msec); 0 zone resets
+    clat (usec): min=2, max=104, avg= 9.31, stdev= 4.69
+     lat (usec): min=2, max=104, avg= 9.51, stdev= 4.84
+    clat percentiles (nsec):
+     |  1.00th=[ 3376],  5.00th=[ 4768], 10.00th=[ 5472], 20.00th=[ 6368],
+     | 30.00th=[ 7136], 40.00th=[ 7968], 50.00th=[ 8768], 60.00th=[ 9664],
+     | 70.00th=[10432], 80.00th=[11072], 90.00th=[12224], 95.00th=[13632],
+     | 99.00th=[34560], 99.50th=[40192], 99.90th=[47360], 99.95th=[49920],
+     | 99.99th=[57600]
+   bw (  KiB/s): min= 1584, max= 8232, per=100.00%, avg=3956.04, stdev=1510.95, samples=239
+   iops        : min=  396, max= 2058, avg=988.95, stdev=377.70, samples=239
+  lat (usec)   : 4=2.29%, 10=62.63%, 20=32.67%, 50=2.36%, 100=0.05%
+  lat (usec)   : 250=0.01%
+  fsync/fdatasync/sync_file_range:
+    sync (usec): min=8, max=86412, avg=1002.36, stdev=6734.62
+    sync percentiles (usec):
+     |  1.00th=[   10],  5.00th=[   11], 10.00th=[   14], 20.00th=[   18],
+     | 30.00th=[   22], 40.00th=[   25], 50.00th=[   68], 60.00th=[  115],
+     | 70.00th=[  128], 80.00th=[  145], 90.00th=[  176], 95.00th=[  215],
+     | 99.00th=[42730], 99.50th=[59507], 99.90th=[74974], 99.95th=[78119],
+     | 99.99th=[80217]
+  cpu          : usr=0.34%, sys=3.42%, ctx=339268, majf=0, minf=59
+  IO depths    : 1=200.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,118395,0,118395 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=3946KiB/s (4041kB/s), 3946KiB/s-3946KiB/s (4041kB/s-4041kB/s), io=462MiB (485MB), run=120002-120002msec
+
+Disk stats (read/write):
+    dm-12: ios=0/502457, merge=0/0, ticks=0/219744, in_queue=219744, util=95.03%, aggrios=2855067/144089, aggrmerge=0/0, aggrticks=5554/452, aggrin_queue=6006, aggrutil=89.47%
+    dm-1: ios=5628280/421933, merge=0/0, ticks=9872/2128, in_queue=12000, util=89.47%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-10: ios=0/194, merge=0/0, ticks=0/0, in_queue=0, util=0.18%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem5: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-8: ios=0/194, merge=0/0, ticks=0/0, in_queue=0, util=0.18%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem4: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-6: ios=0/194, merge=0/0, ticks=0/0, in_queue=0, util=0.18%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem3: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-4: ios=0/194, merge=0/0, ticks=0/0, in_queue=0, util=0.18%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem2: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-2: ios=0/194, merge=0/0, ticks=0/0, in_queue=0, util=0.18%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  dm-11: ios=5732391/261198, merge=0/0, ticks=11400/676, in_queue=12076, util=88.90%
+  dm-0: ios=0/194, merge=0/0, ticks=0/0, in_queue=0, util=0.18%
+  dm-9: ios=5731366/261197, merge=0/0, ticks=11560/636, in_queue=12196, util=88.91%
+  dm-7: ios=5730276/261190, merge=0/0, ticks=11372/700, in_queue=12072, util=88.90%
+  dm-5: ios=5729348/261188, merge=0/0, ticks=11120/628, in_queue=11748, util=88.91%
+  dm-3: ios=5709145/261203, merge=0/0, ticks=11324/660, in_queue=11984, util=89.01%

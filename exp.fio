@@ -14,7 +14,7 @@ ioengine=${ENGINE}
 iodepth=1
 fdatasync=${FDATASYNC}
 direct=${DIRECT}
-sync=${SYNC} 
+fsync=${FSYNC}
 
 [pnode0]
 directory=${MOUNTPOINTSOCKET0}

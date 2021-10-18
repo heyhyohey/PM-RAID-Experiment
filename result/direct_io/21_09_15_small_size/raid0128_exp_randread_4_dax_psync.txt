@@ -1,0 +1,36 @@
+pnode0: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 4 processes
+pnode0: Laying out IO files (32 files / total 32768MiB)
+pnode0: Laying out IO files (32 files / total 32768MiB)
+pnode0: Laying out IO files (32 files / total 32768MiB)
+pnode0: Laying out IO files (32 files / total 32768MiB)
+
+pnode0: (groupid=0, jobs=4): err= 0: pid=3163: Wed Sep 15 11:58:00 2021
+  read: IOPS=1448k, BW=5655MiB/s (5929MB/s)(663GiB/120001msec)
+    clat (nsec): min=804, max=940402, avg=2502.18, stdev=607.49
+     lat (nsec): min=832, max=940430, avg=2530.22, stdev=609.87
+    clat percentiles (nsec):
+     |  1.00th=[ 2008],  5.00th=[ 2160], 10.00th=[ 2224], 20.00th=[ 2320],
+     | 30.00th=[ 2384], 40.00th=[ 2416], 50.00th=[ 2480], 60.00th=[ 2512],
+     | 70.00th=[ 2576], 80.00th=[ 2640], 90.00th=[ 2736], 95.00th=[ 2832],
+     | 99.00th=[ 3184], 99.50th=[ 3408], 99.90th=[12864], 99.95th=[17792],
+     | 99.99th=[18304]
+   bw (  MiB/s): min= 5636, max= 5680, per=100.00%, avg=5658.58, stdev= 1.82, samples=960
+   iops        : min=1442973, max=1454161, avg=1448595.70, stdev=465.17, samples=960
+  lat (nsec)   : 1000=0.01%
+  lat (usec)   : 2=0.80%, 4=98.92%, 10=0.13%, 20=0.15%, 50=0.01%
+  lat (usec)   : 100=0.01%, 250=0.01%, 500=0.01%, 1000=0.01%
+  cpu          : usr=14.44%, sys=85.53%, ctx=46104, majf=0, minf=241
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=173716506,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=5655MiB/s (5929MB/s), 5655MiB/s-5655MiB/s (5929MB/s-5929MB/s), io=663GiB (712GB), run=120001-120001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

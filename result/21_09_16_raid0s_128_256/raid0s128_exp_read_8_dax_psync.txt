@@ -1,0 +1,45 @@
+pnode0: (g=0): rw=read, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 8 processes
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+
+pnode0: (groupid=0, jobs=8): err= 0: pid=15356: Thu Sep 16 09:51:52 2021
+  read: IOPS=3465k, BW=13.2GiB/s (14.2GB/s)(1586GiB/120002msec)
+    clat (nsec): min=1507, max=294997, avg=2041.54, stdev=563.99
+     lat (nsec): min=1536, max=295027, avg=2071.91, stdev=566.77
+    clat percentiles (nsec):
+     |  1.00th=[ 1624],  5.00th=[ 1688], 10.00th=[ 1736], 20.00th=[ 1800],
+     | 30.00th=[ 1864], 40.00th=[ 1912], 50.00th=[ 1976], 60.00th=[ 2040],
+     | 70.00th=[ 2128], 80.00th=[ 2224], 90.00th=[ 2384], 95.00th=[ 2544],
+     | 99.00th=[ 2992], 99.50th=[ 3216], 99.90th=[12352], 99.95th=[17536],
+     | 99.99th=[18304]
+   bw (  MiB/s): min=13396, max=13728, per=100.00%, avg=13559.40, stdev= 7.25, samples=1914
+   iops        : min=3429622, max=3514386, avg=3471203.81, stdev=1854.77, samples=1914
+  lat (usec)   : 2=54.21%, 4=45.61%, 10=0.05%, 20=0.12%, 50=0.01%
+  lat (usec)   : 100=0.01%, 250=0.01%, 500=0.01%
+  cpu          : usr=18.46%, sys=81.49%, ctx=92829, majf=0, minf=592
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=415851518,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=13.2GiB/s (14.2GB/s), 13.2GiB/s-13.2GiB/s (14.2GB/s-14.2GB/s), io=1586GiB (1703GB), run=120002-120002msec
+
+Disk stats (read/write):
+    dm-0: ios=0/20, merge=0/0, ticks=0/0, in_queue=0, util=0.01%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem5: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem3: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem4: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem2: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

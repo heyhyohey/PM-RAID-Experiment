@@ -1,0 +1,48 @@
+pnode0: (g=0): rw=randwrite, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 2 processes
+pnode0: Laying out IO files (128 files / total 131072MiB)
+pnode0: Laying out IO files (128 files / total 131072MiB)
+
+pnode0: (groupid=0, jobs=2): err= 0: pid=30564: Thu Oct  7 23:26:24 2021
+  write: IOPS=32.9k, BW=129MiB/s (135MB/s)(15.1GiB/120001msec); 0 zone resets
+    clat (usec): min=2, max=12694, avg= 9.16, stdev= 9.59
+     lat (usec): min=2, max=12694, avg= 9.30, stdev= 9.64
+    clat percentiles (nsec):
+     |  1.00th=[ 5088],  5.00th=[ 5664], 10.00th=[ 6048], 20.00th=[ 6880],
+     | 30.00th=[ 7456], 40.00th=[ 7840], 50.00th=[ 8160], 60.00th=[ 8512],
+     | 70.00th=[ 8896], 80.00th=[ 9536], 90.00th=[11840], 95.00th=[19072],
+     | 99.00th=[27776], 99.50th=[34560], 99.90th=[39680], 99.95th=[41216],
+     | 99.99th=[48896]
+   bw (  KiB/s): min=120080, max=151742, per=100.00%, avg=131872.27, stdev=2142.02, samples=479
+   iops        : min=30020, max=37934, avg=32967.59, stdev=535.51, samples=479
+  lat (usec)   : 4=0.01%, 10=84.26%, 20=11.04%, 50=4.69%, 100=0.01%
+  lat (usec)   : 250=0.01%, 1000=0.01%
+  lat (msec)   : 4=0.01%, 10=0.01%, 20=0.01%
+  fsync/fdatasync/sync_file_range:
+    sync (usec): min=5, max=53192, avg=503.53, stdev=420.01
+    sync percentiles (usec):
+     |  1.00th=[    9],  5.00th=[   12], 10.00th=[  128], 20.00th=[  225],
+     | 30.00th=[  289], 40.00th=[  355], 50.00th=[  424], 60.00th=[  506],
+     | 70.00th=[  611], 80.00th=[  758], 90.00th=[  988], 95.00th=[ 1205],
+     | 99.00th=[ 1680], 99.50th=[ 1893], 99.90th=[ 2409], 99.95th=[ 2671],
+     | 99.99th=[ 4113]
+  cpu          : usr=3.86%, sys=42.73%, ctx=4589699, majf=0, minf=124
+  IO depths    : 1=110.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,3951080,0,395108 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=129MiB/s (135MB/s), 129MiB/s-129MiB/s (135MB/s-135MB/s), io=15.1GiB (16.2GB), run=120001-120001msec
+
+Disk stats (read/write):
+    dm-0: ios=40/7498363, merge=0/0, ticks=0/57420, in_queue=57420, util=99.98%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem5: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem3: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem4: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem2: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

@@ -1,0 +1,52 @@
+pnode0: (g=0): rw=read, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 2 processes
+pnode0: Laying out IO files (128 files / total 131072MiB)
+pnode0: Laying out IO files (128 files / total 131072MiB)
+
+pnode0: (groupid=0, jobs=2): err= 0: pid=10145: Mon Oct 11 01:27:42 2021
+  read: IOPS=291k, BW=1137MiB/s (1193MB/s)(133GiB/120001msec)
+    clat (nsec): min=614, max=493090, avg=6637.63, stdev=44328.49
+     lat (nsec): min=640, max=493116, avg=6664.68, stdev=44328.53
+    clat percentiles (nsec):
+     |  1.00th=[   748],  5.00th=[   788], 10.00th=[   828], 20.00th=[   892],
+     | 30.00th=[   948], 40.00th=[  1004], 50.00th=[  1048], 60.00th=[  1096],
+     | 70.00th=[  1144], 80.00th=[  1208], 90.00th=[  1320], 95.00th=[  1416],
+     | 99.00th=[342016], 99.50th=[370688], 99.90th=[399360], 99.95th=[407552],
+     | 99.99th=[428032]
+   bw (  MiB/s): min= 1118, max= 1155, per=100.00%, avg=1138.62, stdev= 4.30, samples=478
+   iops        : min=286314, max=295869, avg=291485.08, stdev=1101.28, samples=478
+  lat (nsec)   : 750=1.22%, 1000=38.27%
+  lat (usec)   : 2=58.81%, 4=0.03%, 10=0.03%, 20=0.08%, 50=0.01%
+  lat (usec)   : 100=0.01%, 250=0.01%, 500=1.56%
+  cpu          : usr=4.90%, sys=95.05%, ctx=22596, majf=0, minf=120
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=34937786,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=1137MiB/s (1193MB/s), 1137MiB/s-1137MiB/s (1193MB/s-1193MB/s), io=133GiB (143GB), run=120001-120001msec
+
+Disk stats (read/write):
+    dm-12: ios=44206016/81, merge=0/0, ticks=163812/244, in_queue=164056, util=100.00%, aggrios=6491162/103, aggrmerge=0/0, aggrticks=13424/0, aggrin_queue=13424, aggrutil=100.00%
+    dm-1: ios=12982370/19, merge=0/0, ticks=26732/0, in_queue=26732, util=100.00%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-10: ios=0/188, merge=0/0, ticks=0/0, in_queue=0, util=0.10%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem5: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-8: ios=0/188, merge=0/0, ticks=0/0, in_queue=0, util=0.10%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem4: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-6: ios=0/188, merge=0/0, ticks=0/0, in_queue=0, util=0.10%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem3: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-4: ios=0/188, merge=0/0, ticks=0/0, in_queue=0, util=0.10%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem2: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-2: ios=0/188, merge=0/0, ticks=0/0, in_queue=0, util=0.10%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  dm-11: ios=12982320/23, merge=0/0, ticks=26924/0, in_queue=26924, util=100.00%
+  dm-0: ios=0/188, merge=0/0, ticks=0/0, in_queue=0, util=0.10%
+  dm-9: ios=12982311/22, merge=0/0, ticks=27548/0, in_queue=27548, util=100.00%
+  dm-7: ios=12982323/16, merge=0/0, ticks=26752/0, in_queue=26752, util=100.00%
+  dm-5: ios=12982319/16, merge=0/0, ticks=26320/0, in_queue=26320, util=100.00%
+  dm-3: ios=12982305/19, merge=0/0, ticks=26820/0, in_queue=26820, util=100.00%

@@ -1,0 +1,605 @@
+  *-firmware
+       description: BIOS
+       vendor: American Megatrends Inc.
+       physical id: 0
+       version: 3.1
+       date: 05/01/2019
+       size: 64KiB
+       capacity: 15MiB
+       capabilities: pci upgrade shadowing cdboot bootselect socketedrom edd int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int14serial int17printer acpi usb biosbootspecification uefi
+  *-memory
+       description: System Memory
+       physical id: 13
+       slot: System board or motherboard
+       size: 6826GiB
+       capacity: 18TiB
+       capabilities: ecc
+       configuration: errordetection=ecc
+     *-bank:0
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 0
+          serial: 037936D7
+          slot: P1-DIMMA1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:1
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 1
+          serial: 00000C48
+          slot: P1-DIMMA2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:2
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 2
+          serial: 03793563
+          slot: P1-DIMMB1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:3
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 3
+          serial: 00000698
+          slot: P1-DIMMB2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:4
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 4
+          serial: 129932E7
+          slot: P1-DIMMC1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:5
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 5
+          serial: 00000C24
+          slot: P1-DIMMC2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:6
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 6
+          serial: 12992F4B
+          slot: P1-DIMMD1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:7
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 7
+          serial: 00000D6D
+          slot: P1-DIMMD2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:8
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 8
+          serial: 12992EA1
+          slot: P1-DIMME1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:9
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 9
+          serial: 00000531
+          slot: P1-DIMME2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:10
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: a
+          serial: 12992EA2
+          slot: P1-DIMMF1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:11
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: b
+          serial: 00000C3D
+          slot: P1-DIMMF2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:12
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: c
+          serial: 0379367C
+          slot: P2-DIMMA1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:13
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: d
+          serial: 00000676
+          slot: P2-DIMMA2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:14
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: e
+          serial: 03793681
+          slot: P2-DIMMB1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:15
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: f
+          serial: 00000C25
+          slot: P2-DIMMB2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:16
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 10
+          serial: 129932EF
+          slot: P2-DIMMC1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:17
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 11
+          serial: 00000683
+          slot: P2-DIMMC2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:18
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 12
+          serial: 037935FA
+          slot: P2-DIMMD1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:19
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 13
+          serial: 00000F54
+          slot: P2-DIMMD2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:20
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 14
+          serial: 037935EF
+          slot: P2-DIMME1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:21
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 15
+          serial: 00000C34
+          slot: P2-DIMME2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:22
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 16
+          serial: 1299272A
+          slot: P2-DIMMF1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:23
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 17
+          serial: 000007AC
+          slot: P2-DIMMF2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:24
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 18
+          serial: 037935EB
+          slot: P3-DIMMA1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:25
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 19
+          serial: 00002563
+          slot: P3-DIMMA2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:26
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 1a
+          serial: 03793553
+          slot: P3-DIMMB1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:27
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 1b
+          serial: 000025AC
+          slot: P3-DIMMB2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:28
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 1c
+          serial: 12992BD5
+          slot: P3-DIMMC1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:29
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 1d
+          serial: 00000675
+          slot: P3-DIMMC2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:30
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 1e
+          serial: 037935F0
+          slot: P3-DIMMD1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:31
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 1f
+          serial: 000024D4
+          slot: P3-DIMMD2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:32
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 20
+          serial: 037935F7
+          slot: P3-DIMME1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:33
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 21
+          serial: 00000DF3
+          slot: P3-DIMME2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:34
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 22
+          serial: 313D75A8
+          slot: P3-DIMMF1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:35
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 23
+          serial: 0000067B
+          slot: P3-DIMMF2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:36
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 24
+          serial: 0379355F
+          slot: P4-DIMMA1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:37
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 25
+          serial: 00000723
+          slot: P4-DIMMA2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:38
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 26
+          serial: 03793686
+          slot: P4-DIMMB1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:39
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 27
+          serial: 0000064E
+          slot: P4-DIMMB2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:40
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 28
+          serial: 313D4165
+          slot: P4-DIMMC1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:41
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 29
+          serial: 0000281A
+          slot: P4-DIMMC2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:42
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 2a
+          serial: 037935FC
+          slot: P4-DIMMD1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:43
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 2b
+          serial: 00000C2E
+          slot: P4-DIMMD2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:44
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 2c
+          serial: 03793604
+          slot: P4-DIMME1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:45
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 2d
+          serial: 00000D36
+          slot: P4-DIMME2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:46
+          description: DIMM DDR4 Synchronous 2666 MHz (0.4 ns)
+          product: M393A4K40CB2-CTD
+          vendor: Samsung
+          physical id: 2e
+          serial: 3153E32C
+          slot: P4-DIMMF1
+          size: 32GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+     *-bank:47
+          description: DIMM Synchronous Non-volatile 2666 MHz (0.4 ns)
+          product: NMA1XXD256GPS
+          vendor: Intel
+          physical id: 2f
+          serial: 000008C7
+          slot: P4-DIMMF2
+          size: 252GiB
+          width: 64 bits
+          clock: 2666MHz (0.4ns)
+  *-cache:0
+       description: L1 cache
+       physical id: b0
+       slot: L1-Cache
+       size: 640KiB
+       capacity: 640KiB
+       capabilities: synchronous internal write-back instruction
+       configuration: level=1
+  *-cache:1
+       description: L2 cache
+       physical id: b1
+       slot: L2-Cache
+       size: 10MiB
+       capacity: 10MiB
+       capabilities: synchronous internal varies unified
+       configuration: level=2
+  *-cache:2
+       description: L3 cache
+       physical id: b2
+       slot: L3-Cache
+       size: 13MiB
+       capacity: 13MiB
+       capabilities: synchronous internal varies unified
+       configuration: level=3
+  *-cache:3
+       description: L1 cache
+       physical id: b4
+       slot: L1-Cache
+       size: 640KiB
+       capacity: 640KiB
+       capabilities: synchronous internal write-back instruction
+       configuration: level=1
+  *-cache:4
+       description: L2 cache
+       physical id: b5
+       slot: L2-Cache
+       size: 10MiB
+       capacity: 10MiB
+       capabilities: synchronous internal varies unified
+       configuration: level=2
+  *-cache:5
+       description: L3 cache
+       physical id: b6
+       slot: L3-Cache
+       size: 13MiB
+       capacity: 13MiB
+       capabilities: synchronous internal varies unified
+       configuration: level=3
+  *-cache:6
+       description: L1 cache
+       physical id: b8
+       slot: L1-Cache
+       size: 640KiB
+       capacity: 640KiB
+       capabilities: synchronous internal write-back instruction
+       configuration: level=1
+  *-cache:7
+       description: L2 cache
+       physical id: b9
+       slot: L2-Cache
+       size: 10MiB
+       capacity: 10MiB
+       capabilities: synchronous internal varies unified
+       configuration: level=2
+  *-cache:8
+       description: L3 cache
+       physical id: ba
+       slot: L3-Cache
+       size: 13MiB
+       capacity: 13MiB
+       capabilities: synchronous internal varies unified
+       configuration: level=3
+  *-cache:9
+       description: L1 cache
+       physical id: bc
+       slot: L1-Cache
+       size: 640KiB
+       capacity: 640KiB
+       capabilities: synchronous internal write-back instruction
+       configuration: level=1
+  *-cache:10
+       description: L2 cache
+       physical id: bd
+       slot: L2-Cache
+       size: 10MiB
+       capacity: 10MiB
+       capabilities: synchronous internal varies unified
+       configuration: level=2
+  *-cache:11
+       description: L3 cache
+       physical id: be
+       slot: L3-Cache
+       size: 13MiB
+       capacity: 13MiB
+       capabilities: synchronous internal varies unified
+       configuration: level=3
+  *-memory UNCLAIMED
+       description: Memory controller
+       product: C620 Series Chipset Family Power Management Controller
+       vendor: Intel Corporation
+       physical id: 1f.2
+       bus info: pci@0000:00:1f.2
+       version: 09
+       width: 32 bits
+       clock: 33MHz (30.3ns)
+       capabilities: bus_master
+       configuration: latency=0
+       resources: memory:96200000-96203fff

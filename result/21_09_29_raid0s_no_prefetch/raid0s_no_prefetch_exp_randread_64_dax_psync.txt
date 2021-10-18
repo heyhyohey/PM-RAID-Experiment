@@ -1,0 +1,102 @@
+pnode0: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 64 processes
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+pnode0: Laying out IO files (4 files / total 4096MiB)
+
+pnode0: (groupid=0, jobs=64): err= 0: pid=6653: Tue Sep 28 22:59:22 2021
+  read: IOPS=2185k, BW=8534MiB/s (8949MB/s)(1000GiB/120020msec)
+    clat (nsec): min=1050, max=52068k, avg=27436.24, stdev=838987.44
+     lat (nsec): min=1081, max=52068k, avg=27635.24, stdev=841987.81
+    clat percentiles (usec):
+     |  1.00th=[    4],  5.00th=[    4], 10.00th=[    4], 20.00th=[    5],
+     | 30.00th=[    5], 40.00th=[    5], 50.00th=[    5], 60.00th=[    5],
+     | 70.00th=[    5], 80.00th=[    5], 90.00th=[    5], 95.00th=[    5],
+     | 99.00th=[    6], 99.50th=[    6], 99.90th=[   10], 99.95th=[23987],
+     | 99.99th=[40109]
+   bw (  MiB/s): min= 7960, max= 8907, per=100.00%, avg=8544.10, stdev= 3.69, samples=15296
+   iops        : min=2037996, max=2280302, avg=2187287.87, stdev=945.76, samples=15296
+  lat (usec)   : 2=0.02%, 4=12.13%, 10=87.76%, 20=0.01%, 50=0.01%
+  lat (usec)   : 100=0.01%, 250=0.01%, 500=0.01%, 750=0.01%
+  lat (msec)   : 4=0.01%, 10=0.01%, 20=0.01%, 50=0.08%, 100=0.01%
+  cpu          : usr=1.59%, sys=14.02%, ctx=234902, majf=4, minf=4083
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=262223024,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=8534MiB/s (8949MB/s), 8534MiB/s-8534MiB/s (8949MB/s-8949MB/s), io=1000GiB (1074GB), run=120020-120020msec
+
+Disk stats (read/write):
+    dm-0: ios=0/16, merge=0/0, ticks=0/0, in_queue=0, util=0.01%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem5: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem3: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem4: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem2: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

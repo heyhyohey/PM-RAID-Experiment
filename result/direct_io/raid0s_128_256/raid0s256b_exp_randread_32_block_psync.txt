@@ -1,0 +1,119 @@
+pnode0: (g=0): rw=randread, bs=(R) 256B-256B, (W) 256B-256B, (T) 256B-256B, ioengine=psync, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 32 processes
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+pnode0: Laying out IO files (8 files / total 8192MiB)
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12252, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12225, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12241, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12235, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: pid=12243, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: pid=12242, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12247, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: pid=12232, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12229, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12239, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12226, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: pid=12249, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12244, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: pid=12230, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12248, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12223, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12240, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12236, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: pid=12224, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12245, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12228, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12222, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12221, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: pid=12233, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12237, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12227, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12251, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: pid=12250, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12234, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12238, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12246, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
+fio: pid=12231, err=22/file:io_u.c:1841, func=io_u error, error=Invalid argument
+
+pnode0: (groupid=0, jobs=32): err=22 (file:io_u.c:1841, func=io_u error, error=Invalid argument): pid=12221: Fri Sep 10 03:33:23 2021
+  cpu          : usr=0.00%, sys=0.00%, ctx=152, majf=0, minf=716
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=50.0%, 4=50.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=32,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+
+Disk stats (read/write):
+    dm-0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem5: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem3: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem4: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem2: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

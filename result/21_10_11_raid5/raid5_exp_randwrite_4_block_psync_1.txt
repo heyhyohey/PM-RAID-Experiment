@@ -1,0 +1,61 @@
+pnode0: (g=0): rw=randwrite, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 4 processes
+pnode0: Laying out IO files (64 files / total 65536MiB)
+pnode0: Laying out IO files (64 files / total 65536MiB)
+pnode0: Laying out IO files (64 files / total 65536MiB)
+pnode0: Laying out IO files (64 files / total 65536MiB)
+
+pnode0: (groupid=0, jobs=4): err= 0: pid=20384: Mon Oct 11 04:46:24 2021
+  write: IOPS=1221, BW=4885KiB/s (5003kB/s)(573MiB/120059msec); 0 zone resets
+    clat (usec): min=2, max=109, avg=11.47, stdev= 6.67
+     lat (usec): min=3, max=110, avg=11.69, stdev= 6.87
+    clat percentiles (nsec):
+     |  1.00th=[ 4448],  5.00th=[ 5664], 10.00th=[ 6240], 20.00th=[ 6880],
+     | 30.00th=[ 7456], 40.00th=[ 8096], 50.00th=[ 9152], 60.00th=[10304],
+     | 70.00th=[11840], 80.00th=[14528], 90.00th=[22144], 95.00th=[28288],
+     | 99.00th=[32384], 99.50th=[37120], 99.90th=[41216], 99.95th=[44800],
+     | 99.99th=[59136]
+   bw (  KiB/s): min= 1736, max= 9328, per=100.00%, avg=4896.65, stdev=375.23, samples=956
+   iops        : min=  434, max= 2332, avg=1223.90, stdev=93.78, samples=956
+  lat (usec)   : 4=0.28%, 10=56.76%, 20=31.60%, 50=11.33%, 100=0.02%
+  lat (usec)   : 250=0.01%
+  fsync/fdatasync/sync_file_range:
+    sync (usec): min=9, max=127245, avg=3260.84, stdev=10290.70
+    sync percentiles (usec):
+     |  1.00th=[   13],  5.00th=[   15], 10.00th=[   17], 20.00th=[   22],
+     | 30.00th=[   29], 40.00th=[   37], 50.00th=[  269], 60.00th=[  537],
+     | 70.00th=[  676], 80.00th=[  938], 90.00th=[ 4621], 95.00th=[23200],
+     | 99.00th=[54789], 99.50th=[60556], 99.90th=[78119], 99.95th=[79168],
+     | 99.99th=[90702]
+  cpu          : usr=0.15%, sys=1.53%, ctx=656788, majf=0, minf=237
+  IO depths    : 1=200.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,146634,0,146634 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=4885KiB/s (5003kB/s), 4885KiB/s-4885KiB/s (5003kB/s-5003kB/s), io=573MiB (601MB), run=120059-120059msec
+
+Disk stats (read/write):
+    dm-12: ios=0/756639, merge=0/0, ticks=0/1311044, in_queue=1311044, util=99.06%, aggrios=2873919/192296, aggrmerge=0/0, aggrticks=5779/795, aggrin_queue=6574, aggrutil=95.00%
+    dm-1: ios=5748150/356439, merge=0/0, ticks=11496/1536, in_queue=13032, util=94.95%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-10: ios=0/27892, merge=0/0, ticks=0/124, in_queue=124, util=16.19%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem5: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-8: ios=0/27892, merge=0/0, ticks=0/116, in_queue=116, util=16.18%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem4: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-6: ios=0/27892, merge=0/0, ticks=0/168, in_queue=168, util=16.18%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem3: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-4: ios=0/27892, merge=0/0, ticks=0/128, in_queue=128, util=16.16%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem2: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-2: ios=0/27892, merge=0/0, ticks=0/188, in_queue=188, util=16.17%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  dm-11: ios=5747853/356809, merge=0/0, ticks=11804/1412, in_queue=13216, util=95.00%
+  dm-0: ios=0/27892, merge=0/0, ticks=0/120, in_queue=120, util=16.14%
+  dm-9: ios=5747774/356644, merge=0/0, ticks=11544/1372, in_queue=12916, util=94.99%
+  dm-7: ios=5747868/356583, merge=0/0, ticks=11496/1428, in_queue=12924, util=94.95%
+  dm-5: ios=5748022/356521, merge=0/0, ticks=11468/1416, in_queue=12884, util=94.95%
+  dm-3: ios=5747364/357209, merge=0/0, ticks=11548/1532, in_queue=13080, util=94.98%

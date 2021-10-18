@@ -1,0 +1,31 @@
+pnode0: (g=0): rw=read, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+fio-3.27-64-g15ce
+Starting 1 process
+pnode0: Laying out IO files (256 files / total 262144MiB)
+
+pnode0: (groupid=0, jobs=1): err= 0: pid=4115: Wed Sep 15 03:04:33 2021
+  read: IOPS=401k, BW=1567MiB/s (1643MB/s)(184GiB/120001msec)
+    clat (nsec): min=1807, max=114798, avg=2264.93, stdev=266.46
+     lat (nsec): min=1836, max=114829, avg=2295.17, stdev=267.24
+    clat percentiles (nsec):
+     |  1.00th=[ 1960],  5.00th=[ 2040], 10.00th=[ 2096], 20.00th=[ 2160],
+     | 30.00th=[ 2192], 40.00th=[ 2224], 50.00th=[ 2256], 60.00th=[ 2288],
+     | 70.00th=[ 2288], 80.00th=[ 2352], 90.00th=[ 2448], 95.00th=[ 2576],
+     | 99.00th=[ 2736], 99.50th=[ 2832], 99.90th=[ 3216], 99.95th=[ 5472],
+     | 99.99th=[12864]
+   bw (  MiB/s): min= 1563, max= 1573, per=100.00%, avg=1568.54, stdev= 1.70, samples=239
+   iops        : min=400228, max=402795, avg=401546.88, stdev=435.93, samples=239
+  lat (usec)   : 2=2.15%, 4=97.78%, 10=0.05%, 20=0.02%, 50=0.01%
+  lat (usec)   : 100=0.01%, 250=0.01%
+  cpu          : usr=15.39%, sys=84.57%, ctx=11495, majf=0, minf=60
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=48145398,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=1567MiB/s (1643MB/s), 1567MiB/s-1567MiB/s (1643MB/s-1643MB/s), io=184GiB (197GB), run=120001-120001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

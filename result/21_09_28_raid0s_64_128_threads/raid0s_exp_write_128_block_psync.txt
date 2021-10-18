@@ -1,0 +1,174 @@
+pnode0: (g=0): rw=write, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 128 processes
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+pnode0: Laying out IO files (2 files / total 2048MiB)
+
+pnode0: (groupid=0, jobs=128): err= 0: pid=7017: Tue Sep 28 16:41:02 2021
+  write: IOPS=248k, BW=969MiB/s (1017MB/s)(114GiB/120005msec); 0 zone resets
+    clat (nsec): min=1666, max=3840.4k, avg=12507.39, stdev=48814.56
+     lat (nsec): min=1719, max=3840.8k, avg=12621.60, stdev=48819.47
+    clat percentiles (usec):
+     |  1.00th=[    3],  5.00th=[    3], 10.00th=[    3], 20.00th=[    3],
+     | 30.00th=[    4], 40.00th=[    4], 50.00th=[    4], 60.00th=[    4],
+     | 70.00th=[    5], 80.00th=[    5], 90.00th=[    6], 95.00th=[   11],
+     | 99.00th=[  281], 99.50th=[  359], 99.90th=[  519], 99.95th=[  586],
+     | 99.99th=[  734]
+   bw (  KiB/s): min=918402, max=1072543, per=100.00%, avg=993017.00, stdev=215.11, samples=30592
+   iops        : min=229581, max=268091, avg=248241.77, stdev=53.73, samples=30592
+  lat (usec)   : 2=0.01%, 4=69.01%, 10=25.98%, 20=0.66%, 50=0.32%
+  lat (usec)   : 100=0.59%, 250=2.14%, 500=1.18%, 750=0.11%, 1000=0.01%
+  lat (msec)   : 2=0.01%, 4=0.01%
+  fsync/fdatasync/sync_file_range:
+    sync (usec): min=3, max=5580, avg=502.04, stdev=453.27
+    sync percentiles (usec):
+     |  1.00th=[    5],  5.00th=[    5], 10.00th=[    5], 20.00th=[    8],
+     | 30.00th=[   12], 40.00th=[  330], 50.00th=[  490], 60.00th=[  619],
+     | 70.00th=[  750], 80.00th=[  898], 90.00th=[ 1106], 95.00th=[ 1287],
+     | 99.00th=[ 1663], 99.50th=[ 1811], 99.90th=[ 2180], 99.95th=[ 2343],
+     | 99.99th=[ 2769]
+  cpu          : usr=0.48%, sys=4.70%, ctx=58532604, majf=0, minf=7594
+  IO depths    : 1=200.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,29782773,0,29782763 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=969MiB/s (1017MB/s), 969MiB/s-969MiB/s (1017MB/s-1017MB/s), io=114GiB (122GB), run=120005-120005msec
+
+Disk stats (read/write):
+    dm-0: ios=0/63820811, merge=0/0, ticks=0/382584, in_queue=382584, util=100.00%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem5: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem3: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem4: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem2: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

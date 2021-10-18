@@ -1,0 +1,73 @@
+pnode0: (g=0): rw=write, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.27-64-g15ce
+Starting 16 processes
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+pnode0: Laying out IO files (16 files / total 16384MiB)
+
+pnode0: (groupid=0, jobs=16): err= 0: pid=30870: Mon Oct 11 16:28:26 2021
+  write: IOPS=5968, BW=23.3MiB/s (24.4MB/s)(2798MiB/120020msec); 0 zone resets
+    clat (usec): min=2, max=161, avg=10.43, stdev= 6.81
+     lat (usec): min=2, max=162, avg=10.66, stdev= 7.01
+    clat percentiles (nsec):
+     |  1.00th=[ 2960],  5.00th=[ 3728], 10.00th=[ 4960], 20.00th=[ 5728],
+     | 30.00th=[ 6240], 40.00th=[ 6752], 50.00th=[ 7456], 60.00th=[ 9152],
+     | 70.00th=[12224], 80.00th=[14400], 90.00th=[19072], 95.00th=[28032],
+     | 99.00th=[29312], 99.50th=[33024], 99.90th=[40704], 99.95th=[43264],
+     | 99.99th=[50944]
+   bw (  KiB/s): min=13509, max=39948, per=100.00%, avg=23903.53, stdev=308.38, samples=3840
+   iops        : min= 3376, max= 9987, avg=5969.77, stdev=77.09, samples=3840
+  lat (usec)   : 4=6.03%, 10=57.00%, 20=27.37%, 50=9.59%, 100=0.01%
+  lat (usec)   : 250=0.01%
+  fsync/fdatasync/sync_file_range:
+    sync (usec): min=9, max=80819, avg=2667.77, stdev=6671.47
+    sync percentiles (usec):
+     |  1.00th=[   14],  5.00th=[   16], 10.00th=[   20], 20.00th=[   30],
+     | 30.00th=[   38], 40.00th=[   54], 50.00th=[  832], 60.00th=[ 1037],
+     | 70.00th=[ 2278], 80.00th=[ 2802], 90.00th=[ 3130], 95.00th=[17695],
+     | 99.00th=[35914], 99.50th=[40633], 99.90th=[49021], 99.95th=[52691],
+     | 99.99th=[65799]
+  cpu          : usr=0.18%, sys=1.99%, ctx=2900736, majf=0, minf=946
+  IO depths    : 1=200.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,716313,0,716313 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=23.3MiB/s (24.4MB/s), 23.3MiB/s-23.3MiB/s (24.4MB/s-24.4MB/s), io=2798MiB (2934MB), run=120020-120020msec
+
+Disk stats (read/write):
+    dm-12: ios=0/2218028, merge=0/0, ticks=0/2735584, in_queue=2735584, util=99.92%, aggrios=3034637/416189, aggrmerge=0/0, aggrticks=5527/1459, aggrin_queue=6986, aggrutil=99.11%
+    dm-1: ios=5753062/1248064, merge=0/0, ticks=9668/6176, in_queue=15844, util=99.11%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-10: ios=0/294, merge=0/0, ticks=0/0, in_queue=0, util=0.25%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem5: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-8: ios=0/294, merge=0/0, ticks=0/0, in_queue=0, util=0.25%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem4: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-6: ios=0/294, merge=0/0, ticks=0/0, in_queue=0, util=0.25%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem3: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-4: ios=0/294, merge=0/0, ticks=0/4, in_queue=4, util=0.25%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem2: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+    dm-2: ios=0/294, merge=0/0, ticks=0/0, in_queue=0, util=0.25%, aggrios=0/0, aggrmerge=0/0, aggrticks=0/0, aggrin_queue=0, aggrutil=0.00%
+  pmem1: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
+  dm-11: ios=6151172/748891, merge=0/0, ticks=11368/2232, in_queue=13600, util=98.60%
+  dm-0: ios=0/294, merge=0/0, ticks=0/0, in_queue=0, util=0.25%
+  dm-9: ios=6150385/748883, merge=0/0, ticks=11260/2260, in_queue=13520, util=98.57%
+  dm-7: ios=6145568/748883, merge=0/0, ticks=11440/2268, in_queue=13708, util=98.48%
+  dm-5: ios=6127936/748889, merge=0/0, ticks=11472/2208, in_queue=13680, util=98.53%
+  dm-3: ios=6087528/748896, merge=0/0, ticks=11120/2360, in_queue=13480, util=98.54%
